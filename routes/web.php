@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// ('このURLのとき', 'コントローラ@メソッド')
+Route::get('/', 'DiaryController@index');
+
+// php artisan serve
