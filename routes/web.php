@@ -12,6 +12,9 @@
 */
 
 // ('このURLのとき', 'コントローラ@メソッド')
-Route::get('/', 'DiaryController@index');
+Route::get('/', 'DiaryController@index')->name('diary.index');
+Route::get('/diary/create', 'DiaryController@create')->name('diary.create');
+// Route::get('/diary/create', 'DiaryController@create')->('好きな名前');
+Route::post('/diary/store', 'DiaryController@store')->name('diary.store');
 
 // php artisan serve
