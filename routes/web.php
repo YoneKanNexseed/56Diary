@@ -19,3 +19,10 @@ Route::post('/diary/store', 'DiaryController@store')->name('diary.store');
 
 Route::delete('/diary/{id}', 'DiaryController@destroy')
   ->name('diary.destroy');
+
+
+  Route::get('/diary/{id}/edit', 'DiaryController@edit')
+  ->name('diary.edit');
+
+Route::put('/diary/{id}/update', 'DiaryController@update')
+  ->name('diary.update');
