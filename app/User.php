@@ -27,4 +27,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    // テーブルの関係性の設定
+    public function diaries()
+    {
+        // $this = usersテーブル
+        // usersテーブルは0個以上diariesテーブルのデータを持っている
+        return $this->hasMany('App\Diary');
+    }
 }
