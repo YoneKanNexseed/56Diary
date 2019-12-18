@@ -25,6 +25,9 @@ class DiaryController extends Controller
         $diaries = Diary::with('likes')
             ->orderBy('id', 'desc')->get();
 
+            // $diaries = Diary::where('user_id', Auth::user()->id)->with('user')->get();
+
+
         // dd($diaries);
         // dd()：var_dump と die が同時に実行される
 

@@ -17,6 +17,7 @@
       <p>{{$diary->title}}</p>
       <p>{{$diary->body}}</p>
       <p>{{$diary->created_at}}</p>
+      <p>{{$diary->user->name}}</p>
 
 	  {{-- Auth::check() ： ログインしていたらtrue, 他はfalse --}}
       @if (Auth::check() && $diary->user_id == Auth::user()->id)

@@ -19,6 +19,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'test',
             'email' => 'test@example.com',
             'password' => bcrypt('123456'),  // bcrypt：暗号化してくれる
+            'picture_path' => 'fdsa',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
@@ -28,6 +29,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'test2',
             'email' => 'test2@example.com',
             'password' => bcrypt('123456'),  // bcrypt：暗号化してくれる
+            'picture_path' => 'fdsa',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
